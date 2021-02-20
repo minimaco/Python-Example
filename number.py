@@ -74,8 +74,9 @@ print(random.choice(range(5))) # 5 == [0,1,2,3,4]
 # Maco == ["M", "a", "c", "o"]
 print(random.choice("Maco"))
 
+# 如果结尾不 + 1，那么默认是从0开始9结尾，如果 + 1那么输出的随机数字是从1开始的自然数
 R1 = random.choice(range(10)) + 1
 print(R1)
-
+# 从1开始到100结尾，步长是2的随机的数字
 print(random.randrange(1, 100, 2))
 
