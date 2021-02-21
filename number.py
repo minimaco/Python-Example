@@ -68,6 +68,7 @@ print(math.ceil(18.9))
 print(math.floor(18.1))
 # 分开打印小数与整数
 print(math.modf(22.3))
+
 # 随机数
 print(random.choice([1, 2, 454, 243, 21, 54]))
 print(random.choice(range(5))) # 5 == [0,1,2,3,4]
@@ -77,6 +78,16 @@ print(random.choice("Maco"))
 # 如果结尾不 + 1，那么默认是从0开始9结尾，如果 + 1那么输出的随机数字是从1开始的自然数
 R1 = random.choice(range(10)) + 1
 print(R1)
-# 从1开始到100结尾，步长是2的随机的数字
+# 从1开始到100结尾，但不包含100的数字，步长是2的随机的数字，2代表随机数字需要"+2"输出，输出为奇数
 print(random.randrange(1, 100, 2))
 
+# 生成随机数字范围是[0,1)
+print(random.random())
+
+# 将list中的值随机排序
+list = [1, 2, 3, 4, 5]
+random.shuffle(list)
+print(list)
+
+# 随机生成一个实数，范围是[3,5]
+print(random.uniform(3, 5))
