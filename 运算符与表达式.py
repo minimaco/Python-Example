@@ -23,7 +23,7 @@ print(A // B)
 功能：计算等号右侧的表达式的值，并赋值给等号左侧的变量
 值：就是赋值结束后变量的值
 '''
-num1 = 10
+num1 = 2
 num2 = num1 + 20
 print(num2)
 
@@ -38,9 +38,9 @@ print(num2)
 **=     a**=b   ==   a = a ** b
 //=     a//=b   ==   a = a // b
 '''
-num1 += num2
+num1 %= num2
 print(num1)
-for i in
+
 
 
 '''
